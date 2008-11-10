@@ -5,14 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>saveModifiedFiles</string>
 	<key>command</key>
-	<string>#!/usr/bin/env python
-
-import os
-projectDir = os.environ.get('TM_PROJECT_DIRECTORY') or os.environ.get('TM_DIRECTORY')
-
-from pysmell import textmate
-textmate.tags(projectDir)
-
+	<string>python -c "import os; projectDir = os.environ.get('TM_PROJECT_DIRECTORY') or os.environ.get('TM_DIRECTORY');from pysmell import textmate;textmate.tags(projectDir)"
 </string>
 	<key>input</key>
 	<string>none</string>
