@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>>python -c "from pysmell import textmate;textmate.main()"</string>
+	<string>python -c "from pysmell import textmate;textmate.main()"</string>
 	<key>input</key>
 	<string>document</string>
 	<key>keyEquivalent</key>
